@@ -1,0 +1,8 @@
+@echo off
+set logDirectory=
+set anacondaPath=C:\Users\dAriush\anaconda3
+set envPath=C:\Users\dAriush\anaconda3\envs\AI
+call %anacondaPath%\Scripts\activate.bat %envPath%
+start http://localhost:6006/
+call tensorboard --logdir=%logDirectory%
+pause

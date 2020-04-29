@@ -1,0 +1,11 @@
+# ignore jupyter checkpoints
+**/.ipynb_checkpoints
+
+# ignore python cahce files
+**/__pycache__
+
+# ignore spyder files
+**/.spyproject
+
+# vscode config folder
+**/.vscode
