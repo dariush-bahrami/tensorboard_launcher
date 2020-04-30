@@ -24,8 +24,8 @@ def get_time_stamp():
 
 
 def write_batch_file(time_stamp, tensorboard_logs_dir_path,
-                     batchfile_blueprint_path=('tensorboard_luncher\\' +
-                                               'luncher_batchfile_blueprint.txt')):
+                     batchfile_blueprint_path=('tensorboard_launcher\\' +
+                                               'launcher_batchfile_blueprint.txt')):
 
     with open(batchfile_blueprint_path, mode='r',
               encoding='utf-8') as open_file:
@@ -36,10 +36,10 @@ def write_batch_file(time_stamp, tensorboard_logs_dir_path,
                                             f'set logDirectory={time_stamp}',
                                             1)
 
-    luncher_batchfile_name = time_stamp + '_luncher' + '.bat'
-    luncher_batchfile_path = tensorboard_logs_dir_path + luncher_batchfile_name
+    launcher_batchfile_name = time_stamp + '_launcher' + '.bat'
+    launcher_batchfile_path = tensorboard_logs_dir_path + launcher_batchfile_name
 
-    with open(luncher_batchfile_path, mode='w', encoding='utf-8') as open_file:
+    with open(launcher_batchfile_path, mode='w', encoding='utf-8') as open_file:
         open_file.write(batchfile)
 
 
